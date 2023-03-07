@@ -1,7 +1,7 @@
 import { Given, When, Then } from "@cucumber/cucumber";
 import registerPage from "../../src/pages/register.page";
 import accountPage from "../../src/pages/account.page";
-//import formdata from "../../test/resources/formdata.json
+import formdata from "../../test/resources/formdata.json"
 
 Given(/^I am on practice page \"([^\"]*)\"$/, async (openurl) => {
 
@@ -36,7 +36,7 @@ When(/^I select zipcode (.+)$/, async (zipcode) => {
 });
 Then(/^I agreed for terms and conditions$/, async () => {
     //enter all the required fields.
-   // await registerPage.enterFaxCompanyAddress(formdata.fax, formdata.company, formdata.address2)
+    await registerPage.enterFaxCompanyAddress(formdata.fax, formdata.company, formdata.address2)
     await registerPage.termsAndCondition()
 });
 

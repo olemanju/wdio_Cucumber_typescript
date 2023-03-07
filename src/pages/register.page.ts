@@ -86,6 +86,14 @@ class registerPage {
 
 
     }
+    async enterFaxCompanyAddress(fax:string,company:string,address:string)
+    {
+        await enterTextValue(this.faxtextbox,fax)
+        await enterTextValue(this.company,company)
+        await enterTextValue(this.Address2,address)
+
+
+    }
     
 /*
     async enterLastName(lastname:string)
