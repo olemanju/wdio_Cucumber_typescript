@@ -1,4 +1,0 @@
-{
-  "using": "css selector",
-  "value": "#AccountFrm_zone_id"
-}

@@ -1,3 +1,0 @@
-{
-  "url": "https://automationteststore.com/index.php?rt=account/create"
-}
