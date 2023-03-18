@@ -1,6 +1,7 @@
 import{ChainablePromiseElement} from "webdriverio"
 
 export const enterTextValue = async(element :Promise<WebdriverIO.Element>, value:string) =>
+//export const enterTextValue = async(element :ChainablePromiseElement<Promise<WebdriverIO.Element>>, value:string) =>
 {
  await (await element).setValue(value)
 
