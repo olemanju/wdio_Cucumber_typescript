@@ -34,6 +34,7 @@ export const config: Options.Testrunner = {
        // './test/features/**/ApiIntegration.feature'
         './test/features/**/ApiIntegration.feature',
         './test/features/**/Register.feature'
+        
       // './test/features/**/login.feature'
     ],
     // Patterns to exclude.
