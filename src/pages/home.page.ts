@@ -1,10 +1,9 @@
-import {ChainablePromiseElement} from "webdriverio"
+import { ChainablePromiseElement } from "webdriverio"
 import Page from "./page";
 
+class Homepage extends Page {
 
-class Homepage extends Page{
-
-    public get heading () {
+    public get heading() {
         return $('.heading')
     }
 

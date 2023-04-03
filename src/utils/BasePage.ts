@@ -1,18 +1,17 @@
-import{ChainablePromiseElement} from "webdriverio"
+import { ChainablePromiseElement } from "webdriverio"
 
-export const enterTextValue = async(element :Promise<WebdriverIO.Element>, value:string) =>
+export const enterTextValue = async (element: Promise<WebdriverIO.Element>, value: string) =>
 //export const enterTextValue = async(element :ChainablePromiseElement<Promise<WebdriverIO.Element>>, value:string) =>
 {
- await (await element).setValue(value)
+  await (await element).setValue(value)
 
 }
 
-export const selectDropdownByvisible =async (element:Promise<WebdriverIO.Element>, value:string) => {
-    
+export const selectDropdownByvisible = async (element: Promise<WebdriverIO.Element>, value: string) => {
+
   await (await element).selectByVisibleText(value)
 }
 
-export const clickOnButton  =async (element: Promise<WebdriverIO.Element>) => {
-    await (await element).click()
+export const clickOnButton = async (element: Promise<WebdriverIO.Element>) => {
+  await (await element).click()
 }
-    
